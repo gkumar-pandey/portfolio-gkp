@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:ital,wght@0,400;1,400;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  /* overflow-x: hidden; */
+  
+}
+
+:root {
+  --primary-color: #0a192f;
+  --secondary-color: #64ffda;
+  --hover-background: rgba(100, 255, 218, 0.1);
+  --third-color: #dbe6fd;
+  --primary-font: "Source Sans Pro", sans-serif;
+}
+body {
+  background-color: var(--primary-color);
+}
+
+/* Nav bar start */
+#navbar {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid black;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+#logo {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.nav-list {
+  flex-grow: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+#resume {
+  border: 1px solid var(--secondary-color);
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 5px 5px;
+  color: rgba(100, 255, 218);
+}
+
+#resume:hover {
+  background-color: var(--hover-background);
+}
+.under-line-animation {
+  display: inline-block;
+  position: relative;
+}
+.under-line-animation::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--secondary-color);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+
+}
+.under-line-animation:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hamberger {
+  display: none;
+  font-size: 1.4rem;
+}
+
+/* Hero Seciton Start  */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../Assets/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.hero-text {
+  /* border: 1px solid red; */
+  width: 38vw;
+  height: 80vh;
+  margin-left: 50%;
+  color: white;
+  top: 50%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-text p {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+.intro-text {
+  display: flex;
+  font-weight: 200;
+  align-items: center;
+  gap: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Raleway, sans-serif;
+}
+.auto-type {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.social-icon {
+  margin-top: 1rem;
+  display: flex;
+  /* margin-left: ; */
+  width: 30%;
+  justify-content: space-around;
+  height: 40px;
+  /* border: 1px solid red; */
+}
+
+.social-brand-icon {
+  transition: all 0.2s ease-out;
+  color: #fff;
+  font-size: 1.8rem;
+}
+.social-brand-icon:hover {
+  transform: translateY(-10px);
+  font-size: 2rem;
+  color: #079675;
+}
+/* Hero section End */
+ 
+/* About section */
+#about {
+  /* border: 1px solid red; */
+  padding: 1rem;
+  width: 60%;
+  margin: auto;
+  height: 100%;
+
+}
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+}
+.row {
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+   
+}
+.about-text {
+  /* margin-left: -10rem; */
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 60%;
+  color: white;
+  padding: 0 1rem;
+  border-radius: 8px;
+
+}
+.greet {
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  align-items: center;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;;
+}
+#about-img img {
+  height: 350px;
+  width: 300px;
+  border: 4px solid var(--secondary-color);
+  border-radius: 10px;
+}
+#description {
+  font-size: 1.3rem;
+  width: 90%;
+  
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
+}
+#about-btn {
+  margin: 1rem 0;
+   
+}
+.btn {
+  padding: 0.5rem;
+  margin-left: 2px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+/* About section End */
+
+/* Tech section start */
+/* Mobile  */
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 60%;
+     
+  }
+  #about {
+    /* border: 1px solid red; */
+    width: 90%;
+  }
+
+  #hero-txt {
+    /* border: 1px solid red; */
+    margin-left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    padding: 0 0;
+  }
+  #hero-txt p {
+    font-size: 2.4rem;
+  }
+  #section {
+    width: 90%;
+  }
+  #about-img img {
+    height: 350px;
+    width: 300px;
+  }
+  .greet{
+    font-size: 1.4rem;
+  }
+  .about-text{
+    width: 100%;
+    margin-left: 0;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-top: 5px;
+    border: 1px solid #fff;
+  }
+  
+  #description{
+    width: 100%;
+    font-size: 1.4rem;
+ 
+   
+  }
+}
+/* Desktop */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  #nav-bar {
+    position: static;
+  }
+  .nav-list.active {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    /* border: 1px solid red; */
+    width: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    height: 40vh;
+  }
+  .nav-list {
+    display: none;
+  }
+  .hamberger {
+    display: block;
+  }
+  .hero-text {
+    width: 60vw;
+    /* border: 1px solid red; */
+    margin-left: 40%;
+    padding-left: 1rem;
+  }
+  .hero-text p {
+    font-size: 3rem;
+  }
+  .intro-text {
+    font-size: 1.5rem;
+  }
+  .fa-brands {
+    transition: all 0.2s ease-out;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  .fa-brands:hover {
+    transform: translateY(-10px);
+    font-size: 2rem;
+    color: #079675;
+  }
+}

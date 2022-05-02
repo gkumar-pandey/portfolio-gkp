@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #0a192f;
+  --secondary-color: #64ffda;
+  --hover-background: rgba(100, 255, 218, 0.1);
+  --third-color: #dbe6fd;
+  --primary-font: "Source Sans Pro", sans-serif;
+}
+#projects-section {
+  /* border: 1px solid red; */
+  width: 80%;
+  height:  100%;
+  margin: auto;
+  padding: 1rem;
+}
+#msg {
+  /* border: 1px solid red; */
+  color: #fff;
+  padding: 1rem;
+  width: max-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.3rem;
+  justify-content: space-evenly;
+  font-family: var(--primary-font);
+}
+#project-details {
+  /* border: 1px solid red; */
+  width: 70%;
+  margin: auto;
+  color: white;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.project-img img{
+  height: 300px;
+  width: 500px;
+  /* border: 1px solid red; */
+}
+.project-text{
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  height: auto;
+  width: 500px;
+}
+.project-title{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  font-size: 2rem;
+  /* flex-grow: 1; */
+  /* width: max-content; */
+}
+.project-title i{
+  color: var(--secondary-color);
+}
+.project-title h2{
+  margin-left: 10px;
+}
+.project-link {
+  padding: 1rem 0rem;
+}
+#project-page-link {
+  /* border: 1px solid red; */
+  width: max-content;
+  padding: 0.5rem;
+  margin: auto;
+ 
+}
+.see-project-link{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
+}
+@media screen and (max-width: 425px){
+  #projects-section{
+    /* border: 1px solid red; */
+    width: 85%;
+  }
+  #msg{
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0;
+    
+  }
+  #project-details {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .project-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-img img{
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 350px;
+  }
+  .project-text {
+    border: 1px solid white;
+    height: 100%;
+    padding: 0.5rem;
+    width: auto;
+  }
+}

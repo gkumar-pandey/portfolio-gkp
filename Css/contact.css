@@ -1,0 +1,137 @@
+ 
+:root {
+  --primary-color: #0a192f;
+  --secondary-color: #66ffdb;
+  --hover-background: rgba(100, 255, 218, 0.1);
+  --third-color: #dbe6fd;
+  --primary-font: "Source Sans Pro", sans-serif;
+}
+
+.contact {
+  height: max-content;
+  /* border: 1px solid red; */
+
+  padding: 1rem;
+  width: 70%;
+  margin: auto;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contact-logo-link {
+  color: white;
+  /* border: 1px solid red; */
+  flex-wrap: wrap;
+  width: 35%;
+   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.contact-logo-link-div {
+  display: flex;
+   
+  font-family: var(--primary-font);
+  /* justify-content: flex-end; */
+}
+.contact-logo-link-div span {
+    font-size: 1.5rem;
+}
+.contact-logo-link-div i {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.contact-content form {
+  padding: 1rem;
+  display: flex;
+
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+.contact-content form div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0.2rem;
+  /* border: 1px solid red; */
+   
+}
+.contact-content form div input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  width: 49%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+ 
+#subject {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  font-family: var(--primary-font);
+  box-sizing: border-box;
+  margin: 0.4rem 0;
+}
+ 
+#message-area {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+}
+
+#submit-btn{
+    width: 20%;
+    margin: auto;
+    margin-top: 1rem;
+}
+footer {
+    /* border: 1px solid red; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    /* font-family: var(--primary-font); */
+}
+
+
+@media screen and (max-width: 425px){
+    .contact{
+        width: 100%;
+        height: 100%;
+    }
+    .contact-logo-link {
+        flex-direction: column;
+        /* border: 1px solid red; */
+        width: 100%;
+         
+        font-size: 1.6rem;
+    }
+    .contact-logo-link-div i{
+        height: 30px;
+        width: 30px;
+    }
+    #submit-btn{
+        width: 40%;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #0a192f;
+  --secondary-color: #64ffda;
+  --hover-background: rgba(100, 255, 218, 0.1);
+  --third-color: #dbe6fd;
+  --primary-font: "Source Sans Pro", sans-serif;
+}
+#Education-section {
+  height: max-content;
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+#education-content {
+  /* border: 1px solid red; */
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.education-text {
+  font-size: 1.5rem;
+  font-family: var(--primary-font);
+   
+}
+.audio {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.audio p {
+  font-size: 1.4rem;
+  font-family: var(--primary-font);
+}
+
+@media screen and (max-width: 425px) {
+  #Education-section {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .education-text{
+    font-size: 1.3rem;
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: start;
+  }
+  .audio img {
+    height: 200px;
+    width: 300px;
+  }
+}
